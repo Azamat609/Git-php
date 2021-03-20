@@ -1,0 +1,197 @@
+/*
+//==============================//
+//7.1
+<?php
+    $a='php';
+    $a=strtoupper($a);
+    echo $a;
+?>
+//==============================//
+//7.2
+<?php
+    $a='PHP';
+    $a=strtolower($a);
+    echo $a;
+?> 
+//==============================//
+//7.3
+<?php
+    $a='london';
+   $a=ucfirst($a);
+    echo $a;
+?>
+//==============================//
+//7.4
+<?php
+    $a='London';
+    $a=lcfirst($a);
+    echo $a;
+?>
+//==============================//
+//7.5
+<?php
+    $a='london is the capital of great britain';
+   $a=ucwords($a);
+    echo $a;
+?>
+//==============================//
+//7.6
+<?php
+    $a='LONDON';
+    $a=ucfirst(strtolower($a));
+    echo $a;
+?>
+//==============================//
+//7.7
+<?php
+    $a='html css php';
+    $a=strlen($a);
+    echo $a;
+?>
+//==============================//
+//7.8
+<?php
+    $password=ReadLine();//6787643
+    $p=strlen($password );
+    if($p>5 && $p<10)
+    echo 'пароль подходит';
+    else
+    echo 'пароль не подходит';
+?>
+//==============================//
+//7.9
+<?php
+    $str = "html css php";
+
+    echo substr($str, 0,4)."<br>";
+    echo substr($str, 5,3)."<br>"; 
+    echo substr($str, 9);
+?>
+//==============================//
+//7.10
+<?php
+    $str = "htmlcssphp";
+
+    echo substr($str, -3);
+?>
+//==============================//
+//7.11
+<?php
+    $str = "http://html";
+
+    if('http://'==substr($str, 0,7))
+    echo'да';
+    else 
+    echo'нет';
+?>
+//==============================//
+//7.12
+<?php
+    $str = "https://html";
+
+    if('http://'==substr($str, 0,7) || 'https://'==substr($str, 0,8) )
+    echo'да';
+    else 
+    echo'нет';
+?>
+//==============================//
+//7.13
+<?php
+    $str = "htmlcssphp.png"; 
+    if('.png'==substr($str, -4))
+    echo'да';
+    else
+    echo'нет';
+?>
+//==============================//
+//7.14
+<?php
+    $str = "htmlcssphp.png"; 
+    if('.png'==substr($str, -4)||
+    '.ipg'==substr($str, -4))
+    echo'да';
+    else
+    echo'нет';
+?>
+//==============================//
+//7.15
+<?php
+    $str = "htmlcssphp.png"; 
+    if(5<strlen($str))
+    echo substr($str,0,5),'...';
+    else
+    echo $str;
+?>
+//==============================//
+//7.16
+<?php
+    $a='31.12.2014';
+    echo str_replace(".","-",$a);
+?>
+//==============================//
+//7.17
+<?php
+    $str = "abracadabra";
+    $d = array("a","b","c");
+    $b = array("1","2","3");
+    echo str_replace($d,$b,$str);
+?>
+//==============================//
+//7.18
+<?php
+    $str = "1a2b3c4b5d6e7f8g9h0";
+$d=array("1","2","3","4","5","6","7","8","9","0");
+    echo str_replace($d,"",$str);
+?>
+//==============================//
+//7.19
+<?php 
+$s="1a2b3c4b5d6e7f8g9h0";
+$a=array("a"=>1,"b"=>2,"c"=>3);
+//1
+echo strtr($s, $a)."<br>";
+//2
+echo strtr($s,"abc","123")
+?>
+//==============================//
+//7.20
+<?php
+    $a='1a2b3c4b5d6e7f8g9h0';
+    echo substr_replace($a,'a',0);
+?>
+//==============================//
+//7.21
+<?php
+    $str='1a2b3c4b5d6e7f8g9h0';
+    echo substr_replace($str,'!!!',2,5)
+?>
+//==============================//
+//7.22
+<?php
+$str = "abc abc abc";
+echo strpos($str,"b");
+?>
+//==============================//
+//7.23
+<?php
+$str = "abc abc abc";
+echo strrpos($str,"b");
+?>
+//==============================//
+//7.24
+<?php
+$str = "abc abc abc";
+echo strpos($str,"b",3);
+?>
+//==============================//
+//7.25
+<?php
+$str = "aa aa aa aa";
+echo strpos($str," ")."<br>";
+if(strpos($str,".."))
+echo "да";
+else
+ echo "нет";
+?>
+//==============================//
+*/
